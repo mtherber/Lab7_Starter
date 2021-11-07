@@ -16,7 +16,7 @@ var urlsToCache = [
   'assets/components/RecipeCard.js',
   'assets/components/RecipeExpand.js',
   'assets/styles/main.css',
-  //'index.html'
+  'index.html',
 ];
 
 // Once the service worker has been installed, feed it some initial URLs to cache
