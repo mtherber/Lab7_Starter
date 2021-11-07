@@ -12,7 +12,7 @@ var urlsToCache = [
   'assets/images/icons/3-star.svg',
   'assets/images/icons/4-star.svg',
   'assets/images/icons/5-star.svg',
-  'assets/images/arrow-down.png',
+  'assets/images/icons/arrow-down.png',
   'assets/components/RecipeCard.js',
   'assets/components/RecipeExpand.js',
   'assets/styles/main.css',
