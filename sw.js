@@ -3,7 +3,7 @@
 
 const CACHE_NAME = 'lab-7-starter';
 
-const urlsToCache = [
+var urlsToCache = [
   'assets/scripts/main.js',
   'assets/scripts/main.js',
   'assets/images/0-star.svg',
