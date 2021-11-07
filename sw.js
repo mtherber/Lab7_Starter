@@ -5,20 +5,20 @@ const CACHE_NAME = 'lab-7-starter';
 
 const urlsToCache = [
   '/',
-  '/assets/scripts/main.js',
-  '/assets/scripts/main.js',
-  '/assets/images/0-star.svg',
-  '/assets/images/1-star.svg',
-  '/assets/images/2-star.svg',
-  '/assets/images/3-star.svg',
-  '/assets/images/4-star.svg',
-  '/assets/images/5-star.svg',
-  '/assets/images/arrow-down.png',
-  '/assets/components/RecipeCard.js',
-  '/assets/components/RecipeExpand.js',
-  '/assets/styles/main.css',
-  '/sw.js',
-  '/index.html'
+  'assets/scripts/main.js',
+  'assets/scripts/main.js',
+  'assets/images/0-star.svg',
+  'assets/images/1-star.svg',
+  'assets/images/2-star.svg',
+  'assets/images/3-star.svg',
+  'assets/images/4-star.svg',
+  'assets/images/5-star.svg',
+  'assets/images/arrow-down.png',
+  'assets/components/RecipeCard.js',
+  'assets/components/RecipeExpand.js',
+  'assets/styles/main.css',
+  'sw.js',
+  'index.html'
 ];
 
 // Once the service worker has been installed, feed it some initial URLs to cache
