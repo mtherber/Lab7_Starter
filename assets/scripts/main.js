@@ -57,13 +57,14 @@ function initializeServiceWorker() {
    *  TODO - Part 2 Step 1
    *  Initialize the service worker set up in sw.js
    */
+
+  // The code in this function is modified from the Google Documentation
+  // provided in the lab. Even Suong (tutor) said it was okay to use this code.
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      navigator.serviceWorker.register('sw.js').then(function(reg) {
+        console.log('ServiceWorker registration successful with scope: ', reg.scope);
       }, function(err) {
-        // registration failed :(
         console.log('ServiceWorker registration failed: ', err);
       });
     });

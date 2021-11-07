@@ -25,10 +25,12 @@ self.addEventListener('install', function (event) {
    * TODO - Part 2 Step 2
    * Create a function as outlined above
    */
+
+  // The code in this function is modified from the Google Documentation
+  // provided in the lab. Even Suong (tutor) said it was okay to use this code.
     event.waitUntil(
       caches.open(CACHE_NAME)
         .then(function(cache) {
-          console.log('Opened cache');
           return cache.addAll(urlsToCache);
         })
     );
@@ -39,11 +41,15 @@ self.addEventListener('install', function (event) {
  * in the same scope do not need to be reloaded before their fetches will
  * go through this service worker
  */
+
 self.addEventListener('activate', function (event) {
   /**
    * TODO - Part 2 Step 3
    * Create a function as outlined above, it should be one line
    */
+
+  // The code in this function is modified from the Google Documentation
+  // provided in the lab. Even Suong (tutor) said it was okay to use this code.
    var cacheAllowlist = ['lab-7-starter'];
 
    event.waitUntil(
@@ -59,12 +65,16 @@ self.addEventListener('activate', function (event) {
    );
 });
 
+
 // Intercept fetch requests and store them in the cache
 self.addEventListener('fetch', function (event) {
   /**
    * TODO - Part 2 Step 4
    * Create a function as outlined above
    */
+  
+  // The code in this function is modified from the Google Documentation
+  // provided in the lab. Even Suong (tutor) said it was okay to use this code.
    event.respondWith(
     caches.match(event.request)
       .then(function(response) {
